@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <title>COBRANZA</title>
+    <link rel="stylesheet" href="Estilos/style.css">
+    <script src="clases.js"></script>	
+  
+</head>
+<body onload="usuarios();">
+	<header>
+		<div>
+			<h1 title="main cabecera otro">PERFIL DEL ADMINISTRADOR  <button style="float: right; " onclick="salir_sesion();"> Cerrar sesion </button></h1>
+    </header>
+    <form id="formulario1">
+     <h2>PROPIETARIO</h2>
+     <h3>Introducir datos del usuario</h3>
+    
+   
+        <table class="card">
+            <thead>
+                
+                <tr>
+                    <th>Nombre</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Contraseña</th>
+                    <th>Rol</th>
+                </tr>
+            </thead>
+            <tbody id="usuarios">
+
+            </tbody>
+        </table>
+        <form action="Registro">
+            <div class="caja">
+                <label for="Nombre">Nombre Completo</label><br>
+                <input type="text" id="Nombre" ><br><br>
+                <label for="Telefono">Teléfono</label><br>
+                <input type="Number" id="Telefono" value="0"><br><br>
+                <label for="Correo">Correo</label><br>
+                <input type="text" id="Correo" ><br><br>
+                <label for="Password">Contraseña</label><br>
+                <input type="text" id="Password" value="0"><br><br>
+                <select id="rol">
+                    <option value="deudor">Deudor</option>
+                    <option value="admin">Admin</option>
+                </select> <br><br>
+                <button type="button"id="Guardar1" class="guardar">Guardar</button><br><br>
+            </div>
+        </form>
+    <div class="caja2">
+        <form action="Cobro">
+                <label for="Cobro">Ingresar Cantidad a cobrar</label><br>
+                <input type="Number" id="Cobro_deuda" value="0"><br><br>
+                <label for="Nombre">Ingresar nombre de usuario al que se le aplicará el cargo</label><br>
+                <input type="text" id="Nombre_deuda"><br><br>
+                
+                <button type="button"id="Guardar3" class="guardar1">Aplicar a Todos</button><br><br>
+                <button type="button"id="Guardar2" class="guardar">Guardar</button><br><br><br>
+        </form>
+    </div>
+
+       <table class="card1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Deuda inicial</th>
+                </tr>
+            </thead>
+            <tbody id="usuarios2">
+            </tbody>
+       </table>
+   
+        <table class="card2">
+          <thead>
+            <tr>
+                <th> Nombre</th>
+                <th> Pago</th>
+                <th>Deuda pendiente</th>
+            </tr>
+          </thead>
+         <tbody id="usuarios3">
+         </tbody>
+        </table>
+
+    
+    <form  action="Pago">
+        <div class="caja3">
+            <label for="Pago">Ingresar Cantidad a pagar</label><br>
+            <input type="Number" id="Pago" value="0"><br><br>
+            <label for="Nombre">Ingresar nombre de usuario </label><br>
+            <input type="text" id="Nombre_Pago"><br><br>
+            <input type="date" name="fecha" id="fecha_pago" value=""> <br> <br>
+            <button type="button"id="Guardar4" class="guardar">Guardar</button><br><br><br>
+        </div>
+    </form>
+
+        <table class="card3">
+            <head>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Pago Realizado</th>
+                    <th>Fecha de Pago</th>
+                </tr>
+            </head>
+            <tbody id="listado_pagos">
+            </tbody>
+        </table>
+    <form action="Consulta"> 
+        <div class="caja4">
+            <label for="Fecha" class="texto_fecha">Ingresar fecha </label><br>
+            <input type="date" id="fecha_consulta" value=""><br><br>
+            <button type="button" id="Consultar" class="guardar1">Consultar</button><br><br><br>
+         </div>
+    </form>
+     
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$( document ).ready(function() {
+
+    var now = new Date();
+
+    var day = ("0" + now.getDate()).slice(-2);
+    var month = ("0" + (now.getMonth() + 1)).slice(-2);
+
+    var year = now.getFullYear();
+    $("#fecha").val(day + "-" + month + "-" +year);
+});
+</script>
+<script src="app.js"></script>
+<script src="logout.js"></script>
+</div>
+</body>
+</html>

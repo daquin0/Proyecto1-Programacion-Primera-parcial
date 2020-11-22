@@ -1,0 +1,24 @@
+body{
+    background-color: #DBCBAE;
+}
+.card{
+    background-color: #B08389;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 700px;
+    padding: 30px;
+    height: 300px;
+    overflow: auto;
+    
+}
+
+button {
+    font-size: 20px;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: black;
+    border-style: double;
+}

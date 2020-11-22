@@ -1,0 +1,135 @@
+body{
+    background-color: #DBCBAE;
+}
+.card{
+    background-color: #83B097;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 700px;
+    padding: 30px;
+    height: 300px;
+    overflow: auto;
+    float: right;
+}
+.caja{
+    background-color: #83B097;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 400px;
+    padding: 30px;
+    height: 300px;
+    overflow: auto;
+    
+}
+.caja3{
+    background-color: #8395B0;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 400px;
+    padding: 30px;
+    height: 300px;
+    overflow: auto;
+    
+ 
+}
+.caja2{
+    background-color: #B08399;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 400px;
+    padding: 30px;
+    height: 300px;
+    /*float: left;*/
+    display: inline-block;
+}
+
+.card1{
+    background-color: #B08399;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 700px;
+    padding: 30px;
+    height: 300px;
+    overflow: auto;
+    float: right;
+}
+.card2{
+    background-color: #8395B0;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 700px;
+    padding: 30px;
+    height: 300px;
+    overflow: auto;
+    margin-left: 15%;
+    float: right;
+}
+.card3{
+    background-color: #B08389;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 700px;
+    padding: 30px;
+    height: 300px;
+    overflow: auto;
+    float: right;
+}
+.caja4{
+    background-color: #B08389;
+    font-size:20px;
+    color: whitesmoke;
+    margin: 1%;
+    width: 400px;
+    padding: 30px;
+    height: 300px;
+    /*float: right;*/
+}
+
+.texto_fecha{
+    font-size: 30px;
+}
+.guardar{
+    transition-duration: 0.4s;
+    width: 150px;
+    border: 2px solid black;
+}
+.guardar:hover{
+    background-color:  rgb(133, 127, 127);
+}
+.guardar1{
+    transition-duration: 0.4s;
+    width: 40%;
+    border: 2px solid black;
+}
+.guardar1:hover{
+    background-color: rgb(133, 127, 127); 
+}
+h1{
+    text-align: center;
+    color: black;
+    border-style: double;
+}
+
+h2{
+    color: black;
+}
+
+h3{
+    color: black;
+}
+
+th{
+    color: black;
+   font-size: 20px;
+}
+button {
+    font-size: 20px;
+    text-align: center;
+}
